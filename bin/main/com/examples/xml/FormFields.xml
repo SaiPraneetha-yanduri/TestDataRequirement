@@ -1,0 +1,40 @@
+<data>
+	<ValueStream>card</ValueStream>
+	<properties>
+		<property name="CardProduct" type="dropdown" default="All"
+			groupname="cardinfo">
+			<list>
+				<item>All</item>
+				<item>DIT</item>
+				<item>DITChrome</item>
+				<item>More</item>
+				<item>DITMiles</item>
+				<item>SBC</item>
+			</list>
+		</property>
+
+		<property name="InternalStatus" type="dropdown"
+			groupname="cardinfo">
+			<list>
+				<item>I</item>
+				<item>R</item>
+			</list>
+		</property>
+		
+		
+	</properties>
+
+	<states>
+		<state name="Reward_Balance" type="range">
+			<range>
+				<min>100</min>
+				<max>500</max>
+			</range>
+		</state>
+		<state name="Current_Balance" type="numeric" default="100">
+		</state>
+		<state name="Criteria_Description" type="textarea">
+		</state>
+		
+	</states>
+</data>  
